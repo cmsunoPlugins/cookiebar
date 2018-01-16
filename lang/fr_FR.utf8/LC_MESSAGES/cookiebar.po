@@ -1,0 +1,138 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: CmsUno\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-16 17:49+0100\n"
+"PO-Revision-Date: 2018-01-16 17:49+0100\n"
+"Last-Translator: malgrange <jacques.malgrange@gmail.com>\n"
+"Language-Team: Jacques Malgrange <contacter@boiteasite.fr>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Report-\tmsgstr-Bugs-To: \n"
+"Report-\t\tmsgstr-Bugs-To: \n"
+"X-Poedit-KeywordsList: _;T_\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: iso-8859-1\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-SearchPath-0: ../../..\n"
+
+#: ../../../cookiebar.php:23
+msgid "Cookie Bar"
+msgstr "Cookie Bar"
+
+#: ../../../cookiebar.php:24
+msgid ""
+"This plugin is a solution to comply with the ridiculous European Cookie Law."
+msgstr ""
+"Ce plugin est une solution pour se conformer à la ridicule loi européenne "
+"sur les cookies."
+
+#: ../../../cookiebar.php:25
+msgid "Default Settings"
+msgstr "Réglages par défaut"
+
+#: ../../../cookiebar.php:28
+msgid "Type of bar"
+msgstr "Type de barre"
+
+#: ../../../cookiebar.php:31
+msgid "w3.css Bar"
+msgstr "Barre x3.css"
+
+#: ../../../cookiebar.php:32
+msgid "Cookie-Consent Bar"
+msgstr "Barre Cookie-Consent"
+
+#: ../../../cookiebar.php:35
+msgid "W3.css is ultra light. Cookie-Consent is heavier but more powerful."
+msgstr ""
+"W3.css est ultra léger. Cookie-Consent est plus lourd mais plus puissant."
+
+#: ../../../cookiebar.php:37
+msgid "Text"
+msgstr "Texte"
+
+#: ../../../cookiebar.php:38 ../../../cookiebarMake.php:31
+msgid ""
+"This website uses cookies to ensure you get the best experience on our "
+"website."
+msgstr "Ce site utilise des cookies pour vous offrir le meilleur service."
+
+#: ../../../cookiebar.php:39
+msgid "Text to display in the bar."
+msgstr "Texte à afficher dans la barre"
+
+#: ../../../cookiebar.php:41
+msgid "'More' Text"
+msgstr "Texte 'More'"
+
+#: ../../../cookiebar.php:42 ../../../cookiebarMake.php:32
+msgid "Learn more"
+msgstr "En savoir plus"
+
+#: ../../../cookiebar.php:43
+msgid "Text to link to get more detail. Write N to disable."
+msgstr "Texte du lien pour en savoir plus. Ecrire N pour cacher."
+
+#: ../../../cookiebar.php:45
+msgid "'More' URL"
+msgstr "URL 'More'"
+
+#: ../../../cookiebar.php:47
+msgid "URL to get more detail."
+msgstr "URL du site pour en savoir plus."
+
+#: ../../../cookiebar.php:49
+msgid "Button"
+msgstr "Bouton"
+
+#: ../../../cookiebar.php:50 ../../../cookiebarMake.php:34
+msgid "Got it!"
+msgstr "J'accepte"
+
+#: ../../../cookiebar.php:51
+msgid "Link to get more detail."
+msgstr "Lien pour en savoir plus."
+
+#: ../../../cookiebar.php:53
+msgid "Options"
+msgstr "Options"
+
+#: ../../../cookiebar.php:55
+msgid "Cookie-Content Option. Leave empty to see the right format : {...}"
+msgstr ""
+"Option pour Cookie-Content. Laisser vide pour voir le bon format : {...}"
+
+#: ../../../cookiebar.php:57
+msgid "Bar Color"
+msgstr "Couleur de la barre"
+
+#: ../../../cookiebar.php:64
+msgid "Background color for the bottom bar."
+msgstr "Couleur de fond pour la barre"
+
+#: ../../../cookiebar.php:66
+msgid "Button Color"
+msgstr "Couleur du bouton"
+
+#: ../../../cookiebar.php:72
+msgid "Background color for the button of the bottom bar."
+msgstr "Couleur de fond du bouton de la barre"
+
+#: ../../../cookiebar.php:75
+msgid "Save settings"
+msgstr "Enregistre le contenu"
+
+#: ../../../cookiebar.php:75
+msgid "Save"
+msgstr "Enregistrer"
+
+#: ../../../cookiebar.php:91
+msgid "Backup performed"
+msgstr "Sauvegarde effectu&eacute;e"
+
+#: ../../../cookiebar.php:92
+msgid "Impossible backup"
+msgstr "Sauvegarde impossible"
