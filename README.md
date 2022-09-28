@@ -29,4 +29,5 @@ Adds and setup a custom Cookie Consent Warning. Use [cookieconsent](https://cook
 
 ### Versions ###
 
+* 1.1 - 28/09/2022 : Update cookieconsent2 version 3.1.1
 * 1.0 - 16/01/2018 : First stable version
