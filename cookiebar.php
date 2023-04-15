@@ -1,23 +1,19 @@
 <?php
 session_start(); 
-if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQUESTED_WITH'])!='xmlhttprequest') {sleep(2);exit;} // ajax request
 if(!isset($_POST['unox']) || $_POST['unox']!=$_SESSION['unox']) {sleep(2);exit;} // appel depuis uno.php
 ?>
 <?php
 include('../../config.php');
 include('lang/lang.php');
 // ********************* actions *************************************************************************
-if (isset($_POST['action']))
-	{
-	switch ($_POST['action'])
-		{
+if (isset($_POST['action'])) {
+	switch ($_POST['action']) {
 		// ********************************************************************************************
 		case 'plugin': 
-		if(file_exists('../../data/cookiebar.json'))
-			{
+		if(file_exists('../../data/cookiebar.json')) {
 			$q = file_get_contents('../../data/cookiebar.json');
 			$a = json_decode($q,true);
-			}
+		}
 		?>
 		<div class="blocForm">
 			<h2><?php echo T_("Cookie Bar");?></h2>
@@ -92,8 +88,8 @@ if (isset($_POST['action']))
 		else echo '!'.T_('Impossible backup');
 		break;
 		// ********************************************************************************************
-		}
+	}
 	clearstatcache();
 	exit;
-	}
+}
 ?>

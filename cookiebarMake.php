@@ -2,21 +2,18 @@
 if(!isset($_SESSION['cmsuno'])) exit();
 ?>
 <?php
-if(file_exists('data/cookiebar.json'))
-	{
+if(file_exists('data/cookiebar.json')) {
 	include('plugins/cookiebar/lang/lang.php');
 	$q1 = file_get_contents('data/cookiebar.json');
 	$a1 = json_decode($q1,true);
-	if(!empty($a1['typ']) && $a1['typ']=='cc')
-		{
+	if(!empty($a1['typ']) && $a1['typ']=='cc') {
 		$tex = (!empty($a1['tex'])?'"message":"'.$a1['tex'].'",':'');
 		$nolink = ((!empty($a1['mor']) && $a1['mor']=='N')?'"showLink":false,':'');
 		$mor = ''; $url = '';
-		if(!$nolink)
-			{
+		if(!$nolink) {
 			$mor = (!empty($a1['mor'])?'"link":"'.$a1['mor'].'",':'');
 			$url = (!empty($a1['url'])?'"href":"'.$a1['url'].'",':'');
-			}
+		}
 		$btn = (!empty($a1['btn'])?'"dismiss":"'.$a1['btn'].'",':'');
 		$c = '{"content":{'.$tex.$mor.$url.$btn;
 		if(!empty($tex.$mor.$url.$btn)) $c = substr($c,0,-1); // ,
@@ -25,9 +22,8 @@ if(file_exists('data/cookiebar.json'))
 		$Uhead .= '<link rel="stylesheet" href="uno/plugins/cookiebar/cookieconsent.min.css" type="text/css" />'."\r\n";
 		$Ufoot .= '<script type="text/javascript" src="uno/plugins/cookiebar/cookieconsent.min.js"></script>'."\r\n";
 		$Ufoot .= '<script type="text/javascript">window.addEventListener("load",function(){window.cookieconsent.initialise('.$cco.')});</script>'."\r\n";
-		}
-	else if(!empty($a1['typ']) && $a1['typ']=='w3')
-		{
+	}
+	else if(!empty($a1['typ']) && $a1['typ']=='w3') {
 		$tex = (!empty($a1['tex'])?$a1['tex']:T_("This website uses cookies to ensure you get the best experience on our website."));
 		$mor = (!empty($a1['mor'])?$a1['mor']:T_("Learn more"));
 		$url = (!empty($a1['url'])?$a1['url']:'http://ec.europa.eu/ipg/basics/legal/cookies/index_en.htm');
@@ -48,6 +44,6 @@ if(file_exists('data/cookiebar.json'))
 		$s .= 'document.getElementById("cookiebarok").onclick=function(){createCo("seen-cookie-message","yes",ce,cp);cm.className+=" w3-hide";};';
 		$s .= '})();';
 		$Ufoot .= $o ."\r\n".'<script type="text/javascript">'.$s.'</script>'."\r\n";
-		}
 	}
+}
 ?>
